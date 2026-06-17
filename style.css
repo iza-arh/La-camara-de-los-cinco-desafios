@@ -1,0 +1,13 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    /* Fuente estilo terminal */
+}
+
+.card {
+    box-shadow: 0 0 20px rgba(245, 43, 5) !important;
+}
+
+#locationData p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}

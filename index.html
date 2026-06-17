@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudad Inteligente - Nivel 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark text-light d-flex align-items-center min-vh-100">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card bg-secondary text-light shadow-lg border-info">
+                    <div class="card-header border-info">
+                        <h4 class="mb-0 text-info">Terminal de Acceso: Nivel 1</h4>
+                    </div>
+                    <div class="card-body text-center p-4">
+                        <p class="lead">La conexión principal se ha perdido. Para restablecer el protocolo de la Ciudad
+                            Inteligente, necesitamos triangular tu posición actual.</p>
+
+                        <div id="statusMessage" class="mb-3"></div>
+
+                        <div id="locationData" class="d-none mb-4 p-3 bg-dark rounded border border-success">
+                            <h5 class="text-success">Coordenadas Obtenidas</h5>
+                            <p class="mb-1"><strong>Latitud:</strong> <span id="latDisplay">--</span></p>
+                            <p class="mb-0"><strong>Longitud:</strong> <span id="lonDisplay">--</span></p>
+                        </div>
+
+                        <button id="requestLocationBtn" class="btn btn-info w-100 mb-3">
+                            Autorizar Rastreo de Ubicación
+                        </button>
+
+                        <button id="nextLevelBtn" class="btn btn-success w-100 d-none">
+                            Acceder al Nivel 2 ->
+                        </button>
+                    </div>
+                    <div class="card-footer text-muted text-center text-light" style="font-size: 0.8rem;">
+                        Sistema de Recuperación v1.0.4
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
