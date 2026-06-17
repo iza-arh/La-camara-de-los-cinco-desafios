@@ -61,6 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     nextLevelBtn.addEventListener('click', () => {
-        alert("¡Iniciando Nivel 2! Redirigiendo a la siguiente terminal...");
+        localStorage.setItem('userLat', latDisplay.textContent);
+        localStorage.setItem('userLon', lonDisplay.textContent);
+
+        window.location.href = "nivel2.html";
     });
 });
