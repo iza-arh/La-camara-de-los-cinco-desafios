@@ -106,5 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     nextBtn.addEventListener('click', () => {
         alert("Sistemas de mapeo sincronizados. Avanzando al Nivel 3...");
+
+        localStorage.setItem('nivel2superado', 'true');
+
+        window.location.href = 'nivel3.html';
     });
 });
