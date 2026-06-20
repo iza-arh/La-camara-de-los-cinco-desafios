@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel 5: El Portal Cuantico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-light d-flex align-items-center min-vh-100">
+
+    <div class="container text-center">
+        <h2 class="mb-4 text-primary">Nivel 5: El Portal Cuantico</h2>
+
+        <div id="panel" class="alert alert-dark text-info border-info fw-bold" role="alert">Estado: esperando accion del usuario</div>
+
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <button id="btnGenerar" class="btn btn-primary w-100 mb-3 fw-bold">1. Generar y procesar 250000 registros</button>
+
+                <div class="progress mb-3">
+                    <div id="progressBar" class="progress-bar" role="progressbar" style="width:0%">0%</div>
+                </div>
+
+                <div id="resultCard" class="card d-none text-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Resultados</h5>
+                        <ul id="statsList" class="list-group list-group-flush mb-3"></ul>
+                        <button id="btnDownload" class="btn btn-success me-2">Descargar JSON</button>
+                        <button id="btnFinalizar" class="btn btn-primary">Finalizar Nivel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app-level5.js"></script>
+</body>
+</html>
